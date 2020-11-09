@@ -1,0 +1,61 @@
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/Desktop/android calculator
+$ git clone https://github.com/NimeshNAB/myAndroid-1
+Cloning into 'myAndroid-1'...
+warning: You appear to have cloned an empty repository.
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/Desktop/android calculator
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/Desktop/android calculator
+$ cd myAndroid-1
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/Desktop/android calculator/myAndroid-1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        android calculator.zip
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/Desktop/android calculator/myAndroid-1 (master)
+$ git add android calculator.zip
+fatal: pathspec 'android' did not match any files
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/Desktop/android calculator/myAndroid-1 (master)
+$ git add android\ calculator.zip
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/Desktop/android calculator/myAndroid-1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   android calculator.zip
+
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/Desktop/android calculator/myAndroid-1 (master)
+$ git commit -m "my first"
+[master (root-commit) 2a2fdff] my first
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 android calculator.zip
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/Desktop/android calculator/myAndroid-1 (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.88 KiB | 1.88 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NimeshNAB/myAndroid-1
+ * [new branch]      master -> master
+
+nimes@DESKTOP-NHGJH88 MINGW64 ~/D
